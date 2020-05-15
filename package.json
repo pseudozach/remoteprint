@@ -1,0 +1,17 @@
+{
+  "name": "remoteprint",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "pseudozach",
+  "license": "ISC",
+  "dependencies": {
+    "base64-img": "^1.0.4",
+    "child_process": "^1.0.2",
+    "express": "^4.17.1",
+    "text-to-image": "^2.3.0"
+  }
+}

@@ -1,0 +1,16 @@
+<h1>Remote Print</h1>
+<p></p>
+<p>click the button and your text will be printed remotely on your brother printer back at home/office</p>
+<input id="printtext" value="Testing 1 2 3"></input>
+<button onClick="buttonclick()">Remote Print</button>
+
+<p>Brother Hackathon IoT Entry</p>
+<script>
+	function buttonclick(){
+		var printtext = document.getElementById("printtext").value;
+	console.log("button clicked", printtext);
+		var xhttp = new XMLHttpRequest();
+		xhttp.open("GET", "http://blink182.tplinkdns.com:3000/printit?text="+printtext, true);
+xhttp.send();
+	}
+</script>
